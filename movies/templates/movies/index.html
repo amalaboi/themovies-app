@@ -1,0 +1,23 @@
+{% extends 'movies/_base.html' %}
+
+{% block content %}
+    <h1>My Fav Movies!</h1>
+    {% load static %}
+    <img style="width: 700px;" src="{% static 'movies/mpc.jpg' %}" alt="movies collage">
+    {% if movies %}
+        <ol>
+            {% for movie in movies %}
+                <li style="font-weight: bolder; font-size: 2rem;">
+                    <h2 style="color: red;">
+                        {{ movie | title }}
+                    </h2>
+                </li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <h2 style="color: red;">No Favourite Movies</h2>
+    {% endif %}
+{% endblock %}
+
+<!--</body>-->
+<!--</html>-->

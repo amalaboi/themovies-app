@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies App</title>
+
+    <style>
+        h1{
+            font-size: 10rem;
+            /*color: coral;*/
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2.2rem;
+            color: coral;
+            margin: 2rem;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Fav Movies</a>
+        <a href="{% url 'about' %}">About</a>
+    </nav>
+{% block content%} {% endblock %}
+
+    <hr>
+<footer>2026</footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'movies/_base.html' %}
+
+
+
+{% block content %}
+    <h1>I love Action Movies!!!</h1>
+<!--to load image, we have to load a django tag -->
+    {% load static %}
+<!--then we create an img tag like below -->
+    <img style="width:35%;" src="{% static 'movies/str.webp' %}" alt="streetfighter2026">
+    <img style="width:30%;" src="{% static 'movies/gzb.jpg' %}" alt="Ghazab1">
+    <img style="width:30%;" src="{% static 'movies/ghazab.jpeg' %}" alt="Ghazab2">
+    <img style="width:100%;"  src="{% static 'movies/arm.jpg' %}" alt="armageddon">
+    <img style="width:100%; height: 1640px;" src="{% static 'movies/images.jpeg' %}" alt="Ghazab3">
+    <img style="width:45%;" src="{% static 'movies/tra.png' %}" alt="transformer">
+    <img style="width:45%;" src="{% static 'movies/tnt.jpg' %}" alt="tnt">
+    <img style="width:100%;" src="{% static 'movies/tnt.webp' %}" alt="tnt">
+
+{% endblock %}
+
