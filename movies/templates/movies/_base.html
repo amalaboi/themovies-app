@@ -23,9 +23,30 @@
             color: red;
             text-decoration: underline;
         }
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            /*height: 100vh;*/
+        }
+
+        @media(max-width: 900px){
+            h1{
+                font-size: calc(10rem - 7rem);
+            }
+
+            img{
+                width: 520px;
+                height: 320px;
+            }
+        }
     </style>
 </head>
 <body>
+    <div id="wrapper">
+
     <nav>
         <a href="{% url 'home' %}">Fav Movies</a>
         <a href="{% url 'about' %}">About</a>
@@ -34,5 +55,6 @@
 
     <hr>
 <footer>2026</footer>
+    </div>
 </body>
 </html>
